@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --prefix ./Client && npm run build --prefix ./Client && npm install"
+    "build-client": "npm install --prefix ./Client && npm run build --prefix ./Client",
+    "build": "npm run build-client"
   },
   "author": "hassan",
   "license": "ISC",
