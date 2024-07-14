@@ -1,13 +1,9 @@
-// const path = require('path');
-// const { URL } = require('url');
-
-const express = require('express')
+const express = require('express');
 require('dotenv').config();
 
 
-
 const app = express()
-const PORT = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 
 
 const mongoDB = require("./db");
@@ -44,5 +40,5 @@ app.use('/api', require('./Routes/OrderData'));
 // );
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${PORT}`)
+  console.log(`Example app listening on port ${port}`)
 })
