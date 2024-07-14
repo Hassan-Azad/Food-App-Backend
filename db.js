@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURI = 'mongodb+srv://zainsatti1901:mern123@cluster0.ygf12er.mongodb.net/GoFood?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.mongoURI;
+
 // const mongoURI = 'mongodb://zainsatti1901:mern123@ac-0byfai7-shard-00-00.ygf12er.mongodb.net:27017,ac-0byfai7-shard-00-01.ygf12er.mongodb.net:27017,ac-0byfai7-shard-00-02.ygf12er.mongodb.net:27017/?GoFoodssl=true&replicaSet=atlas-2jwtmg-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0'
 
 const mongoDB = async () => {
